@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skafis - Paprastos švietimo technologijos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys">
+    <h1>Skafis</h1>
+    <p>Paprastos švietimo technologijos</p>
+    <div class="language-toggle">
+        <button id="language-btn">LT</button>
+    </div>
+</header>
+
+
+    <main>
+        <ul class="application-list">
+            <li>
+                <img src="image-6.png" alt="Užduočių spausdinimo redagavimas">
+                <a href="#">Užduočių spausdinimo redagavimas</a>
+                <span class="arrow">&rarr;</span>
+            </li>
+            <li>
+                <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys">
+                <a href="#">Surūšiuotos egzaminų užduotys</a>
+                <span class="arrow">&rarr;</span>
+            </li>
+            <li>
+                <img src="image-2.png" alt="Užduočių bankas">
+                <a href="#">Užduočių bankas</a>
+                <span class="arrow">&rarr;</span>
+            </li>
+            <li>
+                <img src="image-3.png" alt="Testavimo aplinka">
+                <a href="#">Testavimo aplinka</a>
+                <span class="arrow">&rarr;</span>
+            </li>
+            <li>
+                <img src="image-4.png" alt="Grupinių pamokų aplinka">
+                <a href="#">Grupinių pamokų aplinka</a>
+                <span class="arrow">&rarr;</span>
+            </li>
+            <li>
+                <img src="image-5.png" alt="Viktorinos aplinka">
+                <a href="#">Viktorinos aplinka</a>
+                <span class="arrow">&rarr;</span>
+            </li>
+        </ul>
+        <p class="coming-soon">More coming soon...</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MB Skafis. Įmonės kodas: 123456789. El. paštas: <a href="mailto:info@skafis.lt">info@skafis.lt</a></p>
+    </footer>
+    <script>
+    document.getElementById('language-btn').addEventListener('click', function () {
+        const button = this;
+        const currentLanguage = button.textContent;
+
+        // Toggle language
+        if (currentLanguage === 'LT') {
+            button.textContent = 'EN';
+            document.querySelector('h1').textContent = 'Skafis';
+            document.querySelector('p').textContent = 'Simple educational technologies';
+            document.querySelector('.application-list').innerHTML = `
+                <li>
+                    <img src="image-6.png" alt="Task printing editor">
+                    <a href="#">Task printing editor</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-1.png" alt="Sorted exam tasks">
+                    <a href="#">Sorted exam tasks</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-2.png" alt="Task bank">
+                    <a href="#">Task bank</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-3.png" alt="Testing environment">
+                    <a href="#">Testing environment</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-4.png" alt="Group lessons environment">
+                    <a href="#">Group lessons environment</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-5.png" alt="Quiz environment">
+                    <a href="#">Quiz environment</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+            `;
+        } else {
+            button.textContent = 'LT';
+            document.querySelector('h1').textContent = 'Skafis';
+            document.querySelector('p').textContent = 'Paprastos švietimo technologijos';
+            document.querySelector('.application-list').innerHTML = `
+                <li>
+                    <img src="image-6.png" alt="Užduočių spausdinimo redagavimas">
+                    <a href="#">Užduočių spausdinimo redagavimas</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys">
+                    <a href="#">Surūšiuotos egzaminų užduotys</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-2.png" alt="Užduočių bankas">
+                    <a href="#">Užduočių bankas</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-3.png" alt="Testavimo aplinka">
+                    <a href="#">Testavimo aplinka</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-4.png" alt="Grupinių pamokų aplinka">
+                    <a href="#">Grupinių pamokų aplinka</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+                <li>
+                    <img src="image-5.png" alt="Viktorinos aplinka">
+                    <a href="#">Viktorinos aplinka</a>
+                    <span class="arrow">&rarr;</span>
+                </li>
+            `;
+        }
+    });
+</script>
+
+</body>
+</html>
+
