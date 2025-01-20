@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skafis - Paprastos švietimo technologijos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="image-4.png" alt="Company Logo" />
+      <h1>Skafis</h1>
+      <p>Paprastos švietimo technologijos</p>
+      <div class="language-toggle">
+        <button id="language-btn">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <ul class="application-list">
+        <li>
+          <img src="image-7.png" alt="Užduočių spausdinimo redagavimas" />
+          <a href="https://print.skafis.lt">Užduočių spausdinimo redagavimas</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys" />
+          <a href="https://www.vbesort.lt">Surūšiuotos egzaminų užduotys</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-3.png" alt="Užduočių bankas" />
+          <a href="https://bankas.skafis.lt">Užduočių bankas</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-2.png" alt="Testavimo aplinka" />
+          <a href="https://testai.skafis.lt">Testavimo aplinka</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-5.png" alt="Grupinių pamokų aplinka" />
+          <a href="https://pamokos.skafis.lt">Grupinių pamokų aplinka</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-6.png" alt="Viktorinos aplinka" />
+          <a href="https://vikto.skafis.lt">Viktorinos aplinka</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 MB Skafis. Įmonės kodas: 306971704. El. paštas:
+        <a href="mailto:info@skafis.lt">info@skafis.lt</a>
+      </p>
+    </footer>
+    <script>
+      document
+        .getElementById("language-btn")
+        .addEventListener("click", function () {
+          const button = this;
+          const currentLanguage = button.textContent;
+
+          // Toggle language
+          if (currentLanguage === "EN") {
+            button.textContent = "LT";
+            document.querySelector("h1").textContent = "Skafis";
+            document.querySelector("p").textContent =
+              "Simple educational technologies";
+            document.querySelector(".application-list").innerHTML = `
+        <li>
+          <img src="image-7.png" alt="Content edit and print" />
+          <a href="https://print.skafis.lt">Content edit and print</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-1.png" alt="Sorted exam problems" />
+          <a href="https://www.vbesort.lt">Sorted exam problems</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-3.png" alt="Content bank" />
+          <a href="https://bankas.skafis.lt">Content bank</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-2.png" alt="Testing environment" />
+          <a href="https://testai.skafis.lt">Testing environment</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-5.png" alt="Group lessons environment" />
+          <a href="https://pamokos.skafis.lt">Group lessons environment</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-6.png" alt="Quiz environment" />
+          <a href="https://vikto.skafis.lt">Quiz environment</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+            `;
+          } else {
+            button.textContent = "EN";
+            document.querySelector("h1").textContent = "Skafis";
+            document.querySelector("p").textContent =
+              "Paprastos švietimo technologijos";
+            document.querySelector(".application-list").innerHTML = `
+        <li>
+          <img src="image-7.png" alt="Užduočių spausdinimo redagavimas" />
+          <a href="https://print.skafis.lt">Užduočių spausdinimo redagavimas</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys" />
+          <a href="https://www.vbesort.lt">Surūšiuotos egzaminų užduotys</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-3.png" alt="Užduočių bankas" />
+          <a href="https://bankas.skafis.lt">Užduočių bankas</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-2.png" alt="Testavimo aplinka" />
+          <a href="https://testai.skafis.lt">Testavimo aplinka</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-5.png" alt="Grupinių pamokų aplinka" />
+          <a href="https://pamokos.skafis.lt">Grupinių pamokų aplinka</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+        <li>
+          <img src="image-6.png" alt="Viktorinos aplinka" />
+          <a href="https://vikto.skafis.lt">Viktorinos aplinka</a>
+          <span class="arrow">&rarr;</span>
+        </li>
+            `;
+          }
+        });
+    </script>
+  </body>
+</html>
