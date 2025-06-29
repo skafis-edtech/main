@@ -3,164 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skafis - Paprastos švietimo technologijos</title>
+    <title>Skafis - Šimtukas tech</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <img src="image-4.png" alt="Company Logo" />
+      <img src="image-4.png" alt="Skafis Logo" />
       <h1>Skafis</h1>
-      <p>Paprastos švietimo technologijos</p>
-      <p><a href="skafis_pitch.pdf">PITCH SLIDES (EN)</a></p>
-      <div class="language-toggle">
-        <button id="language-btn">EN</button>
-      </div>
+      <p>"Šimtukas, MB" tech team software</p>
     </header>
 
     <main>
+      <p>
+        SKAFIS is an EdTech software developed by the tech team of the
+        Lithuanian tutoring company "Šimtukas, MB". It facilitates the tutoring
+        process by efficiently managing content databases and providing students
+        and teachers with in-depth knowledge analytics.
+      </p>
+      <p>SKAFIS software:</p>
+
       <ul class="application-list">
         <li>
-          <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys" />
-          <a href="https://www.vbesort.lt">Surūšiuotos egzaminų užduotys</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-
-        <li>
-          <img src="image-2.png" alt="Testavimo aplinka" />
-          <a href="https://testai.skafis.lt">Testavimo aplinka</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-3.png" alt="Užduočių bankas" />
-          <a href="https://bankas.skafis.lt">Užduočių bankas</a>
-          <span class="arrow">&rarr;</span>
+          <div>
+            <img src="image-3.png" alt="Content Bank logo" />
+            Content Bank (content.skafis.com)
+          </div>
+          <div>
+            <img src="simtukas-bankas.png" alt="Šimtukas Content Bank logo" />
+            <a href="https://bankas.simtukas.lt">Šimtukas Content Bank</a>
+            <span class="arrow">&rarr;</span>
+          </div>
         </li>
         <li>
-          <img src="image-7.png" alt="Užduočių spausdinimo redagavimas" />
-          <a href="https://print.skafis.lt">Užduočių spausdinimo redagavimas</a>
+          <div>
+            <img src="image-2.png" alt="Assessment Platform logo" />
+            Assessment Platform (assess.skafis.com)
+          </div>
+          <div>
+            <img
+              src="simtukas-testai.png"
+              alt="Šimtukas Assessment Platform logo"
+            />
+            <a href="https://testai.simtukas.lt"
+              >Šimtukas Assessment Platform</a
+            >
+            <span class="arrow">&rarr;</span>
+          </div>
+        </li>
+      </ul>
+      <p>
+        We are open to discussing the adoption of this software by other
+        tutoring agencies outside of Lithuania. Feel free to contact us at
+        <a href="mailto:tech@simtukas.lt">tech@simtukas.lt</a>.
+      </p>
+      <p>We also maintain several open-source community projects:</p>
+      <ul class="application-list">
+        <li>
+          <img src="image-1.png" alt="vbesort.lt logo" />
+          <a href="https://www.vbesort.lt"
+            >vbesort.lt - Sorted Lithuanian state exam problems</a
+          >
           <span class="arrow">&rarr;</span>
         </li>
         <li>
-          <img src="image-5.png" alt="Grupinių pamokų aplinka" />
-          <a href="https://pamokos.skafis.lt">Grupinių pamokų aplinka</a>
+          <img src="image-8.png" alt="Korio LMS logo" />
+          <a href="https://koriodienynas.lt">Korio LMS</a>
           <span class="arrow">&rarr;</span>
         </li>
         <li>
-          <img src="image-6.png" alt="Viktorinos aplinka" />
-          <a href="https://vikto.skafis.lt">Viktorinos aplinka</a>
+          <a href="https://sci-dict.org">Science dictionary</a>
           <span class="arrow">&rarr;</span>
         </li>
         <li>
-          <img src="image-8.png" alt="Korio dienynas" />
-          <a href="https://koriodienynas.lt">Korio dienynas</a>
+          <a href="https://testai.skafis.lt">Simplistic assessment platform</a>
           <span class="arrow">&rarr;</span>
         </li>
       </ul>
+      <p>Our team:</p>
+      <ul>
+        <li>
+          Naglis (tech lead) - <a href="https://github.com/naglissul">GitHub</a>
+        </li>
+        <li>Deividas (intern) - <a href="https://github.com/">GitHub</a></li>
+      </ul>
+      <p>
+        Our GitHub:
+        <a href="https://github.com/skafis-edtech"
+          >https://github.com/skafis-edtech</a
+        >
+      </p>
     </main>
     <footer>
       <p>
-        &copy; 2025 MB Skafis. Įmonės kodas: 306971704. El. paštas:
-        <a href="mailto:info@skafis.lt">info@skafis.lt</a>
+        Made by Skafis tech team @ Šimtukas. Report an error or give a
+        suggestion at
+        <a href="mailto:tech@simtukas.lt"> tech@simtukas.lt </a>
       </p>
+      <p>© 2025 MB Šimtukas. All rights reserved.</p>
     </footer>
-    <script>
-      document
-        .getElementById("language-btn")
-        .addEventListener("click", function () {
-          const button = this;
-          const currentLanguage = button.textContent;
-
-          // Toggle language
-          if (currentLanguage === "EN") {
-            button.textContent = "LT";
-            document.querySelector("h1").textContent = "Skafis";
-            document.querySelector("p").textContent =
-              "Simple educational technologies";
-            document.querySelector(".application-list").innerHTML = `
-
-        <li>
-          <img src="image-1.png" alt="Sorted exam problems" />
-          <a href="https://www.vbesort.lt">🇱🇹 Sorted exam problems</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-                <li>
-          <img src="image-2.png" alt="Assessment platform" />
-          <a href="https://testai.skafis.lt">Assessment platform</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-3.png" alt="Content bank" />
-          <a href="https://bankas.skafis.lt">Content bank</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-
-                <li>
-          <img src="image-7.png" alt="Problem sheet generator" />
-          <a href="https://print.skafis.lt">Problem sheet generator</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-5.png" alt="Tutoring management system" />
-          <a href="https://pamokos.skafis.lt">Tutoring management system</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-6.png" alt="Quiz platform" />
-          <a href="https://vikto.skafis.lt">Quiz platform</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-8.png" alt="Korio learning management system" />
-          <a href="https://koriodienynas.lt">Korio learning management system</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-            `;
-          } else {
-            button.textContent = "EN";
-            document.querySelector("h1").textContent = "Skafis";
-            document.querySelector("p").textContent =
-              "Paprastos švietimo technologijos";
-            document.querySelector(".application-list").innerHTML = `
-
-        <li>
-          <img src="image-1.png" alt="Surūšiuotos egzaminų užduotys" />
-          <a href="https://www.vbesort.lt">Surūšiuotos egzaminų užduotys</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-                <li>
-          <img src="image-2.png" alt="Testavimo aplinka" />
-          <a href="https://testai.skafis.lt">Testavimo aplinka</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-3.png" alt="Užduočių bankas" />
-          <a href="https://bankas.skafis.lt">Užduočių bankas</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-
-                <li>
-          <img src="image-7.png" alt="Užduočių spausdinimo redagavimas" />
-          <a href="https://print.skafis.lt">Užduočių spausdinimo redagavimas</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-5.png" alt="Grupinių pamokų aplinka" />
-          <a href="https://pamokos.skafis.lt">Grupinių pamokų aplinka</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-6.png" alt="Viktorinos aplinka" />
-          <a href="https://vikto.skafis.lt">Viktorinos aplinka</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-        <li>
-          <img src="image-8.png" alt="Korio dienynas" />
-          <a href="https://koriodienynas.lt">Korio dienynas</a>
-          <span class="arrow">&rarr;</span>
-        </li>
-            `;
-          }
-        });
-    </script>
   </body>
 </html>
